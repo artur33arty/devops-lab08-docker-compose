@@ -1,0 +1,8 @@
+services:
+  web:
+    image: flask-web:latest
+    build: .
+    ports:
+      - "8000:5000"
+  redis:
+    image: "redis:alpine"
